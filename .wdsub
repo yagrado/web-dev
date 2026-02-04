@@ -14,7 +14,7 @@
     <li><a href="pt4">Fourth Piece</a></li>
     <li><a href="pt5">The End</a></li>
   </ol>
-  
+  <a>I learned how to use anchor tags however more practice will be needed</a>
   <h2 id="pt1">First section</h2>
   <p> Lorem ipsum
   <a href="/web-dev/">Return to Home</a>
