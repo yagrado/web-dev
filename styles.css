@@ -1,0 +1,15 @@
+body{font-family:sans-serif}
+
+p,a,li {color:black;}
+
+a:hover{color:hotpink;}
+
+ul li{font-style: italic}
+
+/*This is a comment*/
+a .int-link{
+  font-weight:bolder
+}
+
+#mail-link{font-size:1.5em}
+
