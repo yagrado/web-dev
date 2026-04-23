@@ -8,8 +8,7 @@ let isDark = false;
 
 function darkOnOff (event){
   // Change background color
-  if (isDark) document.body.style.backgroundColor = "white";
-  else (isDark) document.body.style.backgroundColor= "#fff";
+  if (isDark) document.body.style.backgroundColor= "#fff";
   else document.body.style.backgroundColor ="#000";
   // Change text color
    if (isDark) document.body.style.color = "#000"
