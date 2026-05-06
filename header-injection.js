@@ -6,3 +6,4 @@ fetch("https://yagrado.github.io/web-dev/header.html")
 .then((output)=> output.text())
 .then((text)=> {elem.innerHTML =  elem.innerHTML + text;})
 .catch((e) => console.error(e));
+
