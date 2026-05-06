@@ -4,12 +4,15 @@ const UNCHECK_BOX = "<button onclick='checkItem(this)'><svg viewBox='0 0 448 512
 
 let itemInput = document.querySelector("#item-input");
 let list = document.querySelector("#list");
+loadList();
+document.addEventListener("beforeunload", () => saveList());
 
 document.addEventListener("keydown" , (key) => {
  if (key.code == "Enter") addItem(key);
   console.log(key.code);
 });
 
+//FUNCTION DEFINITIONS
 function addItem(event) {
  if (addItem.value != "") {
   let _newItemText = itemInput.value;
@@ -57,3 +60,14 @@ function uncheckItem(elem) {
  parentLI.style.color = "inherit";
   parentLI.innerHTML = UNCHECK_BOX + parentLI.innerText + TRASH_BUTTON;
 }
+
+
+function saveList() {
+ document.cookie = "list=" + list.innerHTML; 
+}
+
+function loadList() {
+let oldList = document.cookie.substring(5);
+if(oldList !="") list.innerHTML =  oldList;
+}
+
